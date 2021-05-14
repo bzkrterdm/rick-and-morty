@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="52dp"
+                  android:gravity="center_vertical"
+                  android:layout_margin="4dp">
+        <ImageView android:id="@+id/change_layout"
+                   android:src="@drawable/grid"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginEnd="15dp"
+                   android:onClick="onClickChangeLayout"/>
+        <ImageView android:id="@+id/filter"
+                   android:src="@drawable/filter"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginEnd="15dp"
+                   android:onClick="onClickFilter"/>
+        <ImageView android:id="@+id/search"
+                   android:src="@drawable/search"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:onClick="onClickSearch"/>
+        <EditText android:id="@+id/search_text"
+                  android:src="@drawable/search"
+                  android:hint="@string/search_hint"
+                  android:layout_marginStart="4dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:visibility="gone"
+                  android:inputType="text"
+                  android:singleLine="true"
+                  android:imeOptions="actionDone"/>
+        <ImageView android:id="@+id/close_search"
+                   android:src="@drawable/close"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginEnd="4dp"
+                   android:visibility="gone"
+                   android:onClick="onClickCloseSearch"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/character_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:background="@drawable/main_background"/>
+
+</LinearLayout>

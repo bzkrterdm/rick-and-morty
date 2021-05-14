@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <string name="image_desc">Image of character</string>
+    <string name="name_text">Name:</string>
+    <string name="status_text">Status:</string>
+    <string name="species_text">Species:</string>
+    <string name="alive">Alive</string>
+    <string name="dead">Dead</string>
+    <string name="unknown">Unknown</string>
+    <string name="filter_desc">Please, choose one for filter characters by status</string>
+    <string name="ok">OK</string>
+    <string name="search_hint">Search Character by Name</string>
+    <string name="all_status">All</string>
+    <string name="number_of_episodes">Number Of Episodes:</string>
+    <string name="gender">Gender:</string>
+    <string name="origin">Origin Location:</string>
+    <string name="location">Last Location:</string>
+    <string name="last_episode_name">Last Episode Name:</string>
+    <string name="last_episode_date">Last Episode Air Date:</string>
+</resources>

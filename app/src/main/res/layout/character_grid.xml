@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_margin="8dp">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           app:cardCornerRadius="7dp">
+            <ImageView android:id="@+id/char_image"
+                       android:src="@android:drawable/ic_menu_my_calendar"
+                       android:layout_width="75dp"
+                       android:layout_height="75dp"
+                       android:foregroundGravity="bottom"
+                       android:contentDescription="@string/image_desc"/>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/fav_outline"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:padding="4dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/name_text"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_name"
+                          android:text="Rick Sanchez"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/status_text"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_status"
+                          android:text="Alive"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/species_text"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_species"
+                          android:text="Mythological Creature"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

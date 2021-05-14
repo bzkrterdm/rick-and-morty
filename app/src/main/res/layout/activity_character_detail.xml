@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="#AEFFE8A2"
+             android:orientation="vertical">
+    <ImageView android:src="@drawable/arrow"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_margin="12dp"
+               android:onClick="onClickBack"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:layout_margin="8dp">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           app:cardCornerRadius="7dp">
+            <ImageView android:id="@+id/char_image"
+                       android:src="@android:drawable/ic_menu_my_calendar"
+                       android:layout_width="150dp"
+                       android:layout_height="150dp"
+                       android:foregroundGravity="bottom"
+                       android:contentDescription="@string/image_desc"/>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/fav_outline"
+                android:onClick="onClickFav"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:padding="14dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/name_text"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_name"
+                          android:text="Rick Sanchez"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/status_text"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_status"
+                          android:text="Alive"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/species_text"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/char_species"
+                          android:text="Mythological Creature"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/number_of_episodes"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/episodes_number"
+                          android:text="23"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/gender"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/gender"
+                          android:text="Male"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/origin"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/origin"
+                          android:text="Earth"
+                          android:layout_width="wrap_content"
+                          android:textSize="16sp"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:orientation="horizontal">
+                <TextView android:text="@string/location"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/location"
+                          android:text="Earth"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/episode_name_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                <TextView android:text="@string/last_episode_name"
+                          android:textStyle="bold"
+                          android:layout_marginEnd="3dp"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/episode_name"
+                          android:text="Star Mort"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/episode_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                <TextView android:text="@string/last_episode_date"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_marginEnd="3dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+                <TextView android:id="@+id/air_date"
+                          android:text="May 31, 2020"
+                          android:textSize="16sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
